@@ -21,11 +21,17 @@ app.post('/todos',(req,res)=>{
     });
 });
 
+app.get('/todos',(req,res)=>{
+    Todo.find().then((todos)=>{
+        res.send({todos});
+    },(e)=>{
+        res.send(e);
+    });
+});
+
 app.listen(3000,()=>{
     console.log('Starting on port 3000');
 });
-
-
 
 // Basic instruction of mongoose
 // 1. Convert collection name into lower-case and then create.
