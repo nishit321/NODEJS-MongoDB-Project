@@ -8,13 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node":"8.9.4"   
+    "node": "8.9.4"
   },
   "author": "Nishit Shah",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "lodash": "^4.17.10",
     "mongodb": "^2.2.5",
     "mongoose": "^4.5.9"
   },
